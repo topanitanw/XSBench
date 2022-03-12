@@ -111,7 +111,7 @@ clean:
 	rm -rf $(program) $(obj)
 
 edit:
-	vim -p $(source) XSbench_header.h
+	nvim -p $(source) XSbench_header.h
 
 run:
 	./$(program)
