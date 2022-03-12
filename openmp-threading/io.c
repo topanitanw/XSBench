@@ -445,7 +445,7 @@ Inputs read_CLI( int argc, char * argv[] )
 	if( strcasecmp(input.HM, "small") == 0 )
 		input.n_isotopes = 68;
 	else if( strcasecmp(input.HM, "large") == 0 && user_g == 0 )
-	    input.n_gridpoints = 11303;
+	    input.n_gridpoints = 11303 * 0.7;
 	else if( strcasecmp(input.HM, "XL") == 0 && user_g == 0 )
 	    input.n_gridpoints = 11303 * 1.5;
         // input.n_gridpoints = 238847; // sized to make 120 GB XS data
